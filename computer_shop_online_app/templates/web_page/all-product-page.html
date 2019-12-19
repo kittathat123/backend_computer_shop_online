@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Product Page</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Stylesheets/main-page-style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./Stylesheets/all-product-page-style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
+  </head>
+
+  <header class="page-header">
+    <div class="panel wrapper">
+      <div class="panel header" id="panel-header-hide-menu-on-scroll">
+        <div class="header-top-links">
+          <ul>
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                style="text-decoration: none; color: black;"
+                >Computer store</a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="header links">
+          <li><a href="login-page.html">Login</a></li>
+          <li><a href="register-page.html">Register</a></li>
+          <li><a href="#" target="_blank">Tracking status</a></li>
+        </ul>
+      </div>
+
+      <div class="header-sticky" id="header-sticky">
+        <div class="icon-logo-header left">
+          <a href="main.html">
+            <img
+              alt="icon"
+              src="./Icon_image/laptop.png"
+              width="100"
+              height="45"
+            />
+          </a>
+        </div>
+
+        <div class="category-header left">
+          <button class="category-header-dropbtn">
+            <i
+              class="fas fa-bars"
+              style="padding-right: 8px; margin-top: 3.20px;"
+            ></i>
+            <p style="margin: 0px;">Category</p>
+          </button>
+          <div class="category-header-dropdown-content">
+            <a href="#">Notebook</a>
+            <a href="#">Smartphone</a>
+            <a href="#">Tablet</a>
+          </div>
+        </div>
+
+        
+        <div class="showcart-header right" id = "showcart">
+          <i class="fas fa-shopping-cart" ><a href=""></a></i>
+        </div>
+        <div class="user-header right">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="search-container right">
+          <form action="#new-arrival">
+            <input type="text" placeholder="Search..." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <div class="promotion-page-column-flex">
+      <div class="sidebar-main column">
+        <div class="block-content">
+          <button type="button" class="sidebar-collapsible-btn">
+            Category
+          </button>
+          <div class="collapsible-content category">
+            <p class="category-p">
+              <input type="radio" name="category" value="all-product" />All
+              Products <br />
+              <input type="radio" name="category" value="new-arrival" />New
+              Arrival <br />
+              <input type="radio" name="category" value="best-seller" />Best
+              Seller <br />
+            </p>
+          </div>
+          <button type="button" class="sidebar-collapsible-btn">Price</button>
+          <div class="collapsible-content range-slider">
+            <div class="left-slidecontainer">
+              <input
+                type="range"
+                min="80"
+                max="118900"
+                value="1000"
+                class="left-price-slider"
+                id="left-price-slider-id"
+              />
+              <p>Value : <span id="left-slider-value"></span></p>
+            </div>
+          </div>
+          <button type="button" class="sidebar-collapsible-btn">Brand</button>
+          <div class="collapsible-content brand">
+            <p class="brand-filter-p">
+              <li style="list-style: none; margin-bottom: 10px;">
+                <input type="checkbox" name="brand" value="apple" />Apple
+              </li>
+              <li style="list-style: none; margin-bottom: 10px;">
+                <input type="checkbox" name="brand" value="dell" />Dell
+              </li>
+              <li style="list-style: none; margin-bottom: 10px;">
+                <input type="checkbox" name="brand" value="lenovo" />Lenovo
+              </li>
+              <li style="list-style: none; margin-bottom: 10px;">
+                <input
+                  type="checkbox"
+                  name="brand"
+                  value="microsoft"
+                />Microsoft
+              </li>
+              <li style="list-style: none; margin-bottom: 10px;">
+                <input type="checkbox" name="brand" value="razer" />Razer
+              </li>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column-main column">
+
+        <div>
+          <h2 style="margin: 0">Notebook sale</h2>
+          <img
+            src="Promotion_image/Promotion_img_3.jpg"
+            style="width: 100%; height: 200px; margin-left: -10px;"
+          />
+        </div>
+
+        <div class="card product-box" ">
+        <img
+          src="Notebook_image/Apple/apple-2018-retina.jpg"
+        />
+        <h5>
+          Apple 11.6 Inspiron-11 3000 Series Multi Touch 2-in-1 Notebook
+        </h5>
+        <h5 style="float: left">
+          18,000
+        </h5>
+        <h5 style="float: right;">
+          BATH
+        </h5>
+      </div>
+      <div class="card product-box">
+        <img
+          src="Notebook_image/Razer/Razer-Blade-Pro-17.3-4K-Ultra-HD-Touch-Screen-Gaming-Laptop-Intel-Core-i7-32GB-Memory-NVIDIA-GeForce-GTX-1080-1TB-SSD-Black-CNC-Aluminum.jpg"
+        />
+        <h5>
+          Dell 11.6 Inspiron-11 3000 Series Multi Touch 2-in-1 Notebook
+        </h5>
+        <h5 style="float: left">
+          18,000
+        </h5>
+        <h5 style="float: right;">
+          BATH
+        </h5>
+      </div>
+      <div class="card product-box">
+        <img
+          src="Notebook_image/Dell/Dell-11.6-Inspiron-11-3000-Series-Multi-Touch-2-in-1-Notebook.jpg"
+        />
+        <h5>
+          Dell 11.6 Inspiron-11 3000 Series Multi Touch 2-in-1 Notebook
+        </h5>
+        <h5 style="float: left">
+          18,000
+        </h5>
+        <h5 style="float: right;">
+          BATH
+        </h5>
+      </div>
+      <div class="card product-box">
+        <img
+          src="Notebook_image/Lenovo/Lenovo-15.6-IdeaPad-330s.jpg"
+        />
+        <h5>
+          Dell 11.6 Inspiron-11 3000 Series Multi Touch 2-in-1 Notebook
+        </h5>
+        <h5 style="float: left">
+          18,000
+        </h5>
+        <h5 style="float: right;">
+          BATH
+        </h5>
+      </div>
+      <div class="card product-box">
+        <img
+          src="Notebook_image/Apple/apple-2019-retina.jpg"
+        />
+        <h5>
+          Dell 11.6 Inspiron-11 3000 Series Multi Touch 2-in-1 Notebook
+        </h5>
+        <h5 style="float: left">
+          18,000
+        </h5>
+        <h5 style="float: right;">
+          BATH
+        </h5>
+      </div>
+      <div class="card product-box">
+        <img
+          src="Notebook_image/Microsoft/Microsoft-Surface-Laptop-2-13.5-Touch-Screen-Intel-Core-i7-8GB-Memory-256GB-Solid-State-Drive-Cobalt-Blue.jpg"
+        />
+        <h5>
+          Dell 11.6 Inspiron-11 3000 Series Multi Touch 2-in-1 Notebook
+        </h5>
+        <h5 style="float: left">
+          18,000
+        </h5>
+        <h5 style="float: right;">
+          BATH
+        </h5>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------- Modal ------------------------------- -->
+    <div id="cart" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>CART</h2>
+          </div>
+          <div class="modal-body">
+              <div class="card product-item">
+                <div>
+                  <img style = "width: 50%; height: 70%;" src="Notebook_image/Dell/Dell-13.3-Inspiron-13-5000-Series-Multi-Touch-2-in-1-Notebook.jpg">
+                  <h3>Dell 11.6 Inspiron-11 3000 Series Multi Touch 2-in-1 Notebook</h3>
+                  <h3 style = "float: right;">25000 BATH</h3>
+                </div>
+
+              </div>
+          </div>
+        </div>
+      
+      
+
+  </body>
+
+  <footer>
+    <div class="footer-flex-container">
+      <div class="footer-column1">
+        <ul style="list-style-type: none;">
+          <li><strong>About Us</strong></li>
+          <li><a href="#">Who we are</a></li>
+          <li><a href="#">Terms and condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column2">
+        <ul style="list-style-type: none;">
+          <li><strong>Customer Services</strong></li>
+          <li><a href="#">Check Shipping Status</a></li>
+          <li><a href="#">How to register</a></li>
+          <li><a href="#">How to order</a></li>
+          <li><a href="#">Payment Methods</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column3">
+        <ul style="list-style-type: none;">
+          <li><strong>Customer Services</strong></li>
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">Return</a></li>
+          <li><a href="#">Refunds</a></li>
+          <li><a href="#">How to Cancel</a></li>
+          <li><a href="#">Click and collect</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column4">
+        <ul style="list-style-type: none;">
+          <li><strong>Get Our News</strong></li>
+          <li>
+            <a href="#"
+              >Subscribe to our news today to get exclusive privileges</a
+            >
+          </li>
+
+          <div class="subscribe-footer">
+            <form action="">
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                name="email-subscribe"
+                class="custom-input-subscribe"
+              />
+              <button type="submit" class="custom-button-subscribe">
+                <span>SUBSCRIBE</span>
+              </button>
+            </form>
+          </div>
+
+          <div class="social-footer">
+            <h4>Stay Connected</h4>
+            <div class="fb-connect">
+              <a href="#"
+                ><img
+                  src="https://www.bnn.in.th/pub/media/wysiwyg/new-fb-logo.png"
+              /></a>
+              <p style="margin-top: 0;">
+                <span>
+                  Find us<br />on<a
+                    href="#"
+                    style="text-decoration: none; margin-left: 4px; color: blue;"
+                    >Facebook</a
+                  >
+                </span>
+              </p>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-flex-container-mobile-version">
+      <button class="footer-collapsible-button">About Us</button>
+      <div class="footer-collapsible-content">
+        <ul style="list-style-type: none;">
+          <li><a href="#">Who we are</a></li>
+          <li><a href="#">Terms and condition</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <button class="footer-collapsible-button">Customer Services</button>
+      <div class="footer-collapsible-content">
+        <ul style="list-style-type: none;">
+          <li><a href="#">Check Shipping Status</a></li>
+          <li><a href="#">How to register</a></li>
+          <li><a href="#">How to order</a></li>
+          <li><a href="#">Payment Methods</a></li>
+          <li><a href="#">Shipping</a></li>
+        </ul>
+      </div>
+
+      <button class="footer-collapsible-button">Customer Services</button>
+      <div class="footer-collapsible-content">
+        <ul style="list-style-type: none;">
+          <li><a href="#">Warranty</a></li>
+          <li><a href="#">Return</a></li>
+          <li><a href="#">Refunds</a></li>
+          <li><a href="#">How to Cancel</a></li>
+          <li><a href="#">Click and collect</a></li>
+        </ul>
+      </div>
+
+      <div class="subscribe-form-and-stay-connected">
+        <ul style="list-style-type: none;">
+          <li><strong>Get Our News</strong></li>
+          <li>
+            <a href="#"
+              >Subscribe to our news today to get exclusive privileges</a
+            >
+          </li>
+
+          <div class="subscribe-footer">
+            <form action="">
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                name="email-subscribe"
+                class="custom-input-subscribe"
+              />
+              <button type="submit" class="custom-button-subscribe">
+                <span>SUBSCRIBE</span>
+              </button>
+            </form>
+          </div>
+
+          <div class="social-footer">
+            <h4>Stay Connected</h4>
+            <div class="fb-connect">
+              <a href="#"
+                ><img
+                  src="https://www.bnn.in.th/pub/media/wysiwyg/new-fb-logo.png"
+              /></a>
+              <p style="margin-top: 0;">
+                <span>
+                  Find us<br />on<a
+                    href="#"
+                    style="text-decoration: none; margin-left: 4px; color: blue;"
+                    >Facebook</a
+                  >
+                </span>
+              </p>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="JavaScript/all-product-page.js"></script>
+</html>
